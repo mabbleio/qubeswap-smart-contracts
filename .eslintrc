@@ -1,0 +1,6 @@
+{
+  "extends": "@qubeswap/eslint-config-qube",
+  "rules": {
+    "import/no-extraneous-dependencies": 0
+  }
+}
