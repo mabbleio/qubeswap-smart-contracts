@@ -1,17 +1,19 @@
 {
-  "name": "qube-contracts",
+  "name": "qubeswap-smart-contracts",
   "version": "1.0.0",
   "description": "Qube contracts",
   "private": true,
   "workspaces": [
     "projects/**"
   ],
-  "repository": "https://github.com/qubeswap/qube-contracts",
+  "repository": "https://github.com/qubeswap/qubeswap-smart-contracts",
   "author": "QubeSwap",
   "license": "MIT",
   "scripts": {
     "format:check": "prettier --check 'projects/**/*.{js,ts,sol}'",
     "format:write": "prettier --write 'projects/**/*.{js,ts,sol}'",
+	"clean": "rm -rf node_modules",
+	"reset": "rm -rf node_modules && rm -rf artifacts && rm -rf typechain-types && rm -rf abi && rm -rf cache",
     "prepare": "husky install",
     "test": "lerna run test"
   },
@@ -22,8 +24,8 @@
     "@nomiclabs/hardhat-truffle5": "^2.0.0",
     "@nomiclabs/hardhat-web3": "^2.0.0",
     "@openzeppelin/test-helpers": "^0.5.11",
-    "@qubeswap/eslint-config-qube": "^1.2.0",
-    "@qubeswap/qube-swap-lib": "0.0.4",
+    "@pancakeswap/eslint-config-pancake": "^1.2.0",
+    "@pancakeswap/pancake-swap-lib": "0.0.4",
     "@types/chai": "^4.2.21",
     "@types/mocha": "^8.2.2",
     "@types/node": "^14.14.35",
