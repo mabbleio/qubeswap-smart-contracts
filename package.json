@@ -10,10 +10,11 @@
   "author": "QubeSwap",
   "license": "MIT",
   "scripts": {
+	"compile": "yarn workspaces run compile",  
     "format:check": "prettier --check 'projects/**/*.{js,ts,sol}'",
     "format:write": "prettier --write 'projects/**/*.{js,ts,sol}'",
-	"clean": "rm -rf node_modules",
-	"reset": "rm -rf node_modules && rm -rf artifacts && rm -rf typechain-types && rm -rf abi && rm -rf cache",
+	"clean": "rm -rf node_modules && yarn workspaces run clean",
+	"reset": "rm -rf node_modules && yarn workspaces run reset",
     "prepare": "husky install",
     "test": "lerna run test"
   },
