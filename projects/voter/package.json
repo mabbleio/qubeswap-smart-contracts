@@ -7,7 +7,8 @@
     "scripts": {
         "build": "yarn compile && npx tsc",
         "compile": "npx hardhat compile",
-        "clean": "rm -rf dist && npx hardhat clean",
+        "clean": "rm -rf node_modules",
+		"reset": "rm -rf node_modules && rm -rf artifacts && rm -rf typechain-types && rm -rf abi && rm -rf cache",
         "test": "npx hardhat test"
     },
     "keywords": [],

@@ -7,6 +7,8 @@
     "private": true,
     "scripts": {
         "compile": "npx hardhat compile",
+		"clean": "rm -rf node_modules",
+		"reset": "rm -rf node_modules && rm -rf artifacts && rm -rf typechain-types && rm -rf abi && rm -rf cache",
         "deploy_factory:testnet": "npx hardhat run --network testnet scripts/deployFactory.ts",
         "deploy_factory:mainnet": "npx hardhat run --network mainnet scripts/deployFactory.ts",
         "deploy_keeper:mainnet": "npx hardhat run --network mainnet scripts/deployKeeper.ts",
