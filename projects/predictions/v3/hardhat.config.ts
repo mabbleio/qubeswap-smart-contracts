@@ -19,6 +19,12 @@ const bscMainnet: NetworkUserConfig = {
   accounts: [process.env.KEY_MAINNET!],
 };
 
+const ticsMainnet: NetworkUserConfig = {
+  url: 'https://rpc.qubetics.com/',
+  chainId: 9030,
+  accounts: [process.env.KEY_MAINNET!],
+};
+
 const config = {
   defaultNetwork: "hardhat",
   networks: {
