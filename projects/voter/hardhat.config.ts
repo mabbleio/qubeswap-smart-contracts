@@ -21,6 +21,12 @@ const bscMainnet: NetworkUserConfig = {
   allowUnlimitedContractSize: true,
 };
 
+const ticsMainnet: NetworkUserConfig = {
+  url: 'https://rpc.qubetics.com/',
+  chainId: 9030,
+  accounts: [process.env.KEY_MAINNET!],
+};
+
 const config: HardhatUserConfig = {
   defaultNetwork: "hardhat",
   networks: {
