@@ -15,6 +15,8 @@
         "deploy_swapTwoPoolDeployer:mainnet": "npx hardhat run --network mainnet scripts/deploy_swapTwoPoolDeployer.ts",
         "deploy_swapThreePoolDeployer:testnet": "npx hardhat run --network testnet scripts/deploy_swapThreePoolDeployer.ts",
         "deploy_swapThreePoolDeployer:mainnet": "npx hardhat run --network mainnet scripts/deploy_swapThreePoolDeployer.ts",
+		"clean": "rm -rf node_modules",
+		"reset": "rm -rf node_modules && rm -rf artifacts && rm -rf typechain-types && rm -rf abi && rm -rf cache",
         "test": "npx hardhat test",
         "test:coverage": "npx hardhat coverage",
         "test:size-contracts": "npx hardhat size-contracts"
